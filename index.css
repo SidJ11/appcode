@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,300&display=swap');
+
+html *{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px solid indianred; */
+    border-radius: 5px;
+    padding: 0px 100px;
+    -webkit-box-shadow: 0px 10px 26px -14px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 10px 26px -14px rgba(0,0,0,0.32);
+    box-shadow: 0px 10px 26px -14px rgba(0,0,0,0.32);
+    height: 80px;
+}
+
+.logo>:first-child{
+    width: 90px;
+    border-radius: 5px;
+    padding-top: 5px;
+    scale: 0.75;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.nav-items > ul > li{
+    padding: 20px;
+    margin: auto;
+}
+
+.body {
+    margin: 20px 180px;
+}
+
+.search{
+    padding: 10px;
+    border: 2px solid black;
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;  
+}
+
+.res-container{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.res-card{
+    /* border: 1px solid grey; */
+    width: 273px;
+    /* height: 320px;   */
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin:10px;
+}
+
+.res-card:hover{
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.res-details{
+    padding: 0 10px;
+    padding-top: 5px;
+}
+
+.res-img-container{
+    /* border: 2px solid rgb(100, 92, 205); */
+    border-radius: 10px;
+    width: 270px;
+    height: 180px;
+}
+
+.res-img{
+    width: 100%;
+    height:inherit;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center
+}
+
+.res-namerating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.res-name{
+    font-size: larger;
+}
+
+.res-cuisines{
+    color: gray;
+}
+
+.res-costfortwo{
+    color: gray;
+}
+
+.res-location{
+    color: gray;
+}
+
+.filter{
+    margin: 10px;
+}
