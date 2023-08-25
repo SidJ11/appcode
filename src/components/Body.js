@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import resList from "../utils/resList";
 import ResCard from "./ResCard";
+import Shimmer from "./Shimmer";
 
 const Body = () =>{
 
@@ -17,6 +18,11 @@ const Body = () =>{
         setListRes(json?.data?.cards)
         console.log(listRes)
     }
+    
+    if (listRes.length == 0) {
+        return <Shimmer />;
+    }
+
     return(
         <div className="body">
             <div className="search">Search Restaurants</div>
